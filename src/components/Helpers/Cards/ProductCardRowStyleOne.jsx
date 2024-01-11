@@ -3,8 +3,16 @@ import Compair from "../icons/Compair";
 import QuickViewIco from "../icons/QuickViewIco";
 import Star from "../icons/Star";
 import ThinLove from "../icons/ThinLove";
+import { addToCart } from "../../../slices/cartSlice";
+import { useDispatch } from "react-redux";
 
 export default function ProductCardRowStyleTwo({ className, datas, type }) {
+  const dispatch = useDispatch()
+
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+  };
+
   return (
     <div
       data-aos="fade-left"
@@ -43,7 +51,7 @@ export default function ProductCardRowStyleTwo({ className, datas, type }) {
                 {datas.offer_price}
               </span>
             </p>
-            <button type="button" className="w-[110px] h-[30px]">
+            <button type="button" className="w-[110px] h-[30px]" onClick={() => handleAddToCart(datas)}>
               <span className={type === 3 ? "blue-btn" : "yellow-btn"}>
                 {" "}
                 Add To Cart

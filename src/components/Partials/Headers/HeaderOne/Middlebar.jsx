@@ -5,8 +5,12 @@ import ThinLove from "../../../Helpers/icons/ThinLove";
 import ThinPeople from "../../../Helpers/icons/ThinPeople";
 import SearchBox from "../../../Helpers/SearchBox";
 import { Link } from "react-router-dom";
+import logo from '../../../../assets/img/logo-large.png'
+import {useSelector} from 'react-redux'
+
 
 export default function Middlebar({ className, type }) {
+  const {amount} = useSelector((store) => store.cart)
   return (
     <div className={`w-full h-[86px] bg-white ${className}`}>
       <div className="container-x mx-auto h-full">
@@ -18,9 +22,7 @@ export default function Middlebar({ className, type }) {
                   <img
                     width="152"
                     height="36"
-                    src={`${
-                      import.meta.env.VITE_PUBLIC_URL
-                    }/assets/images/logo-3.svg`}
+                    src={`${logo}`}
                     alt="logo"
                   />
                 </Link>
@@ -29,20 +31,16 @@ export default function Middlebar({ className, type }) {
                   <img
                     width="152"
                     height="36"
-                    src={`${
-                      import.meta.env.VITE_PUBLIC_URL
-                    }/assets/images/logo-4.svg`}
+                    src={`${logo}`}                                
                     alt="logo"
                   />
                 </Link>
               ) : (
                 <Link to="/">
                   <img
-                    width="152"
+                    width="172"
                     height="36"
-                    src={`${
-                      import.meta.env.VITE_PUBLIC_URL
-                    }/assets/images/logo.svg`}
+                    src={`${logo}`}   
                     alt="logo"
                   />
                 </Link>
@@ -92,7 +90,7 @@ export default function Middlebar({ className, type }) {
                       type === 3 ? "bg-qh3-blue text-white" : "bg-qyellow"
                     }`}
                   >
-                    15
+                    {amount}
                   </span>
                 </div>
                 {/* <div className="fixed left-0 top-0 w-full h-full z-40"></div> */}

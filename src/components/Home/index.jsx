@@ -12,8 +12,11 @@ import Banner from "./Banner2";
 import BrandSection from "./BrandSection";
 import CampaignCountDown from "./CampaignCountDown";
 import ProductsAds from "./ProductsAds";
+import bgWoman from '../../assets/bg/woman-new-year.png'
 import bg from '../../assets/bg/banner-1.png'
 import bg2 from '../../assets/bg/light-blue-o.png'
+import familyBg from '../../assets/bg/family-shopping.png'
+import girlGlasses from '../../assets/bg/girl-glasses.png'
 
 
 
@@ -45,10 +48,10 @@ export default function Home() {
           seeMoreUrl="/all-products"
           className="category-products mb-[60px]"
         />
-        <BrandSection
+     {  /* <BrandSection
           sectionTitle="Shop by Brand"
           className="brand-section-wrapper mb-[60px]"
-        />
+  />*/}
         <CampaignCountDown
           className="mb-[60px]"
           lastDate="2023-10-04 4:00:00"
@@ -63,13 +66,14 @@ export default function Home() {
        <ViewMoreTitle
           className="best-sallers-section mb-[60px]"
           seeMoreUrl="/sallers"
-          categoryTitle="Best Saller"
+          categoryTitle="Top Sellers"
         >
         <ProductsAds
           ads={[
-            `${bg}`,
-            `${bg2}`,
+            `${bgWoman}`,
+            `${familyBg}`,
           ]}
+          names={['h&m Fashion', 'Tommy Helifieger']}
           sectionHeight="sm:h-[295px] h-full"
           className="products-ads-section mb-[60px]"
         />
@@ -84,21 +88,22 @@ export default function Home() {
           seeMoreUrl="/all-products"
           className="category-products mb-[60px]"
         />
-        <ProductsAds
-          ads={`${import.meta.env.VITE_PUBLIC_URL}/assets/images/ads-1.png`}
+     {/*   <ProductsAds
+          sectionHeight="164"
+          ads={[`${girlGlasses}`]}
           className="products-ads-section mb-[60px]"
-        />
+        />*/}
         <SectionStyleThree
           products={products}
           sectionTitle="New Arrivals"
           seeMoreUrl="/all-products"
           className="new-products mb-[60px]"
         />
-        <ProductsAds
+       {/* <ProductsAds
           sectionHeight="164"
           ads={`${import.meta.env.VITE_PUBLIC_URL}/assets/images/ads-1.png`}
           className="products-ads-section mb-[60px]"
-        />
+      />*/}
         <SectionStyleFour
           products={products}
           sectionTitle="Popular Sales"

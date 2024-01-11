@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import Facebook from "../../../Helpers/icons/Facebook";
 import Instagram from "../../../Helpers/icons/Instagram";
 import Youtube from "../../../Helpers/icons/Youtube";
+import logo from '../../../../assets/img/logo-large.png'
 
+const date = new Date
 
 export default function FooterFour() {
   return (
@@ -23,9 +25,7 @@ export default function FooterFour() {
                 <img
                   width="152"
                   height="36"
-                  src={`${
-                    import.meta.env.VITE_PUBLIC_URL
-                  }/assets/images/logo-4.svg`}
+                  src={`${logo}`}
                   alt="logo"
                 />
               </Link>
@@ -184,14 +184,14 @@ export default function FooterFour() {
               </a>
             </div>
             <span className="sm:text-base text-[10px] text-white font-300">
-              ©2022
+              &copy; {date.getFullYear()}
               <a
-                href="https://quomodosoft.com/"
+                href=""
                 target="_blank"
                 rel="noreferrer"
                 className="font-500 text-qh4-pink mx-1"
               >
-                Quomodosoft
+                ahmedGad-Dev
               </a>
               All rights reserved
             </span>

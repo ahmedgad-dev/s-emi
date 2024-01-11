@@ -3,8 +3,12 @@ import ThinBag from "../../../Helpers/icons/ThinBag";
 import Middlebar from "./Middlebar";
 import Navbar from "./Navbar";
 import TopBar from "./TopBar";
+import logo from '../../../../assets/img/logo-large.png'
+import {useSelector} from 'react-redux'
+
 
 export default function HeaderOne({ className, drawerAction, type = 1 }) {
+  const {amount} = useSelector((store) => store.cart)
   return (
     <header className={` ${className || ""} header-section-wrapper relative`}>
       <TopBar className="quomodo-shop-top-bar" />
@@ -37,8 +41,8 @@ export default function HeaderOne({ className, drawerAction, type = 1 }) {
                   width="152"
                   height="36"
                   src={`${
-                    import.meta.env.VITE_PUBLIC_URL
-                  }/assets/images/logo-3.svg`}
+                    logo
+                  }`}
                   alt="logo"
                 />
               </Link>
@@ -48,8 +52,8 @@ export default function HeaderOne({ className, drawerAction, type = 1 }) {
                   width="152"
                   height="36"
                   src={`${
-                    import.meta.env.VITE_PUBLIC_URL
-                  }/assets/images/logo-4.svg`}
+                    logo
+                  }`}
                   alt="logo"
                 />
               </Link>
@@ -59,8 +63,8 @@ export default function HeaderOne({ className, drawerAction, type = 1 }) {
                   width="152"
                   height="36"
                   src={`${
-                    import.meta.env.VITE_PUBLIC_URL
-                  }/assets/images/logo.svg`}
+                    logo
+                  }`}
                   alt="logo"
                 />
               </Link>
@@ -77,7 +81,7 @@ export default function HeaderOne({ className, drawerAction, type = 1 }) {
                 type === 3 ? "bg-qh3-blue text-white" : "bg-qyellow text-qblack"
               }`}
             >
-              15
+              {amount}
             </span>
           </div>
         </div>

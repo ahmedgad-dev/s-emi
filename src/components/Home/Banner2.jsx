@@ -39,8 +39,8 @@ export default function Banner({ className }) {
                     </span>
                   </div>
                   <p className="xl:text-[30px] sm:text-xl text-[30px] font-semibold xl:leading-10 sm:leading-normal leading-10 mb-[15px]">
-                    Best Styles for all <br />
-                    Boys
+                    Best Styles  <br />
+                    for all Boys
                   </p>
                   <Link to="#">
                     <div className="w-[100px] h-[36px] rounded bg-qyellow flex justify-center items-center">

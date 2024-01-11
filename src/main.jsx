@@ -6,13 +6,18 @@ import App from "./App";
 import "./index.css";
 import 'react-range-slider-input/dist/style.css';
 import { registerSW } from "virtual:pwa-register";
+import { Provider } from "react-redux";
+import { store } from "./store";
+
 if (import.meta.env.MODE === "production") {
   registerSW();
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+     <App />
+    </Provider>  
   </React.StrictMode>
 );
 

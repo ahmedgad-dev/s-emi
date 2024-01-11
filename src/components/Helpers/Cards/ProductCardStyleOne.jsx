@@ -3,8 +3,18 @@ import Compair from "../icons/Compair";
 import QuickViewIco from "../icons/QuickViewIco";
 import Star from "../icons/Star";
 import ThinLove from "../icons/ThinLove";
+import { useDispatch} from "react-redux";
+import { addToCart, calculateTotals } from "../../../slices/cartSlice";
 
 export default function ProductCardStyleOne({ datas, type }) {
+  //const {addToCart} = useSelector((store) => store.cart)
+  const dispatch = useDispatch()
+
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+   // dispatch(calculateTotals())
+  };
+  
   const available =
     (datas.cam_product_sale /
       (datas.cam_product_available + datas.cam_product_sale)) *
@@ -66,7 +76,7 @@ export default function ProductCardStyleOne({ datas, type }) {
             type="button"
             className={type === 3 ? "blue-btn" : "yellow-btn"}
           >
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3" onClick={() => handleAddToCart(datas)}>
               <span>
                 <svg
                   width="14"
