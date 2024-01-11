@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
 import AllProductPage from "./components/AllProductPage";
 import Login from "./components/Auth/Login/index";
@@ -27,7 +27,7 @@ import Wishlist from "./components/Wishlist";
 //import HomeFour from "./components/HomeFour";
 //import HomeFive from "./components/HomeFive";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: "/", element: <Home /> },
   {/* path: "/home-two", element: <HomeTwo /> */},
   {/* path: "/home-three", element: <HomeThree /> */},
