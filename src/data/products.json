@@ -11,7 +11,17 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        "https://i.ibb.co/KV18Ysr/floral-skirt.png",
+        "https://i.ibb.co/KV18Ysr/floral-skirt.png",
+        "https://i.ibb.co/KV18Ysr/floral-skirt.png",
+        "https://i.ibb.co/KV18Ysr/floral-skirt.png",
+        "https://i.ibb.co/KV18Ysr/floral-skirt.png"
+      ]
     },
     {
       "id": "62aefe9a17780a9e549646c2",
@@ -24,7 +34,13 @@
       "campaingn_product": true,
       "cam_product_available": 20,
       "cam_product_sale": 10,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9af9a0e865ee49c99e",
@@ -37,7 +53,13 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "popular"
+      "product_type": "popular",
+      "category":"Womens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9a6e662e77accd4cc4",
@@ -50,12 +72,18 @@
       "campaingn_product": true,
       "cam_product_available": 48,
       "cam_product_sale": 12,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9a9e1c4b69e47fa40f",
       "image": "https://i.ibb.co/1f2nWMM/wolf-cap.png",
-      "brand": "xioami",
+      "brand": "H&M",
       "review": 5,
       "title": "Canopoly duis voluptate dolor sunt sit adipisicing in",
       "offer_price": "$10.42",
@@ -63,12 +91,18 @@
       "campaingn_product": true,
       "cam_product_available": 12,
       "cam_product_sale": 8,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9aa96283a41a9b46fc",
       "image": "https://i.ibb.co/0s3pdnc/adidas-nmd.png",
-      "brand": "xioami",
+      "brand": "H&M",
       "review": 5,
       "title": "Unisure aliqua repreh ex cupt qui elit officia",
       "offer_price": "$16.43",
@@ -76,12 +110,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9aa2577bc8fa4ea7bc",
       "image": "https://i.ibb.co/bPmVXyP/black-converse.png",
-      "brand": "xioami",
+      "brand": "Zara",
       "review": 5,
       "title": "Kenegy consectetur id ex nulla in adipisicing deserunt",
       "offer_price": "$11.92",
@@ -89,12 +129,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "new"
+      "product_type": "new",
+      "category":"Shoes",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9aa117932437d0da93",
       "image": "https://i.ibb.co/Mhh6wBg/timberlands.png",
-      "brand": "samsung",
+      "brand": "Calvin Klein",
       "review": 5,
       "title": "Bizmatic consequat enim quis sit et est eiusmod",
       "offer_price": "$21.93",
@@ -102,12 +148,18 @@
       "campaingn_product": true,
       "cam_product_available": 19,
       "cam_product_sale": 10,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9a93cc2c0e16ddb207",
       "image": "https://i.ibb.co/1RcFPk0/white-nike-high-tops.png",
-      "brand": "apple",
+      "brand": "Calvin Klein",
       "review": 5,
       "title": "Anarco consectetur magna nostrud commodo tempor aliqua laborum",
       "offer_price": "$22.13",
@@ -115,12 +167,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9a39099843b144dc3a",
       "image": "https://i.ibb.co/XzcwL5s/black-shearling.png",
-      "brand": "samsung",
+      "brand": "Calvin Klein",
       "review": 5,
       "title": "Plasto cillum ad minim elit fugiat esse dolore",
       "offer_price": "$26.50",
@@ -128,12 +186,18 @@
       "campaingn_product": true,
       "cam_product_available": 19,
       "cam_product_sale": 10,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9af9a0e865ee49c999999e",
       "image": "https://i.ibb.co/s96FpdP/brown-shearling.png",
-      "brand": "apple",
+      "brand": "H&M",
       "review": 5,
       "title": "Conjurica ea magna eiusmod esse cupt anim aliquip",
       "offer_price": "$18.03",
@@ -141,12 +205,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "popular"
+      "product_type": "popular",
+      "category":"Kids",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9a9a52d2ee3301918a",
       "image": "https://i.ibb.co/7CQVJNm/blue-tank.png",
-      "brand": "google",
+      "brand": "Zara",
       "review": 5,
       "title": "Empirica deserunt laborum ad quis labore labore eu",
       "offer_price": "$29.14",
@@ -154,12 +224,18 @@
       "campaingn_product": true,
       "cam_product_available": 25,
       "cam_product_sale": 10,
-      "product_type": null
+      "product_type": null,
+      "category":"Womens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9ad1e0cfc12838c3c4",
       "image": "https://i.ibb.co/4W2DGKm/floral-blouse.png",
-      "brand": "google",
+      "brand": "Defacto",
       "review": 5,
       "title": "Bluplanet consequat non sunt in dolor eiusmod cillum",
       "offer_price": "$25.32",
@@ -167,12 +243,18 @@
       "campaingn_product": true,
       "cam_product_available": 16,
       "cam_product_sale": 9,
-      "product_type": null
+      "product_type": null,
+      "category":"Hats",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9a05ca1ea50003e072",
-      "image": "product-img-4.jpg",
-      "brand": "google",
+      "image": "https://i.ibb.co/55z32tw/long-sleeve.png",
+      "brand": "Tommy Helfigier",
       "review": 5,
       "title": "Comvoy irure occaecat aliquip do commodo in",
       "offer_price": "$18.97",
@@ -180,12 +262,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9a369487a7db38e327",
-      "image": "product-img-5.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/RvwnBL8/pink-shirt.png",
+      "brand": "Zara",
       "review": 5,
       "title": "Zizzle ad proident do enim nisi quis",
       "offer_price": "$14.15",
@@ -193,12 +281,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9ab5a58ec7eba5e003",
-      "image": "product-img-16.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
+      "brand": "Tommy Helfigier",
       "review": 5,
       "title": "Quintity consequat ad sit non tempor consequat",
       "offer_price": "$11.37",
@@ -206,12 +300,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "popular"
+      "product_type": "popular",
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9acd2d5e4c13d5937c",
-      "image": "product-img-17.jpg",
-      "brand": "google",
+      "image": "https://i.ibb.co/xJS0T3Y/camo-vest.png",
+      "brand": "Tommy Helfigier",
       "review": 5,
       "title": "Musaphics consequat consectetur aliquip nulla deserunt non ea",
       "offer_price": "$10.99",
@@ -219,12 +319,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "new"
+      "product_type": "new",
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9aa06338a7636fde5c",
-      "image": "product-img-18.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/QcvzydB/nikes-red.png",
+      "brand": "Tommy Helfigier",
       "review": 5,
       "title": "Zoxy quis amet ipsum eiusmod cupt veniam nulla",
       "offer_price": "$25.53",
@@ -232,12 +338,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "popular"
+      "product_type": "popular",
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9ac47bcd0a2ea95630",
-      "image": "product-img-19.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/w4k6Ws9/nike-funky.png",
+      "brand": "Defacto",
       "review": 5,
       "title": "Geofarm nulla tempor ea et id adipisicing ea",
       "offer_price": "$20.72",
@@ -245,12 +357,18 @@
       "campaingn_product": true,
       "cam_product_available": 10,
       "cam_product_sale": 8,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9ae487b5c3e1fff5ae",
-      "image": "product-img-20.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/Mhh6wBg/timberlands.png",
+      "brand": "Tommy Helfigier",
       "review": 5,
       "title": "Callflex dolore eiusmod voluptate proident aute incididunt anim",
       "offer_price": "$18.74",
@@ -258,12 +376,18 @@
       "campaingn_product": true,
       "cam_product_available": 18,
       "cam_product_sale": 10,
-      "product_type": null
+      "product_type": null,
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9acd2d5e4c13d5937cfagaga",
-      "image": "product-img-21.jpg",
-      "brand": "google",
+      "image": "https://i.ibb.co/s96FpdP/brown-shearling.png",
+      "brand": "Defacto",
       "review": 5,
       "title": "Musaphics consequat consectetur aliquip nulla deserunt non ea",
       "offer_price": "$10.99",
@@ -271,12 +395,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "new"
+      "product_type": "new",
+      "category":"Mens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9aa06338a7fweq636fde5c",
-      "image": "product-img-22.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/KmSkMbH/striped-sweater.png",
+      "brand": "H&M",
       "review": 5,
       "title": "Zoxy quis amet ipsum eiusmod cupt veniam nulla",
       "offer_price": "$25.53",
@@ -284,12 +414,18 @@
       "campaingn_product": false,
       "cam_product_available": null,
       "cam_product_sale": null,
-      "product_type": "popular"
+      "product_type": "popular",
+      "category":"Shoes",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefegfasgaqgqeghub9ac47bcd0a2ea95630",
-      "image": "product-img-23.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/qBcrsJg/white-vest.png",
+      "brand": "Defacto",
       "review": 5,
       "title": "Geofarm nulla tempor ea et id adipisicing ea",
       "offer_price": "$20.72",
@@ -297,12 +433,18 @@
       "campaingn_product": true,
       "cam_product_available": 10,
       "cam_product_sale": 8,
-      "product_type": null
+      "product_type": null,
+      "category":"Shoes",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9ae487b5c3efqwredgaefafa1fff5ae",
-      "image": "product-img-24.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
+      "brand": "Defacto",
       "review": 5,
       "title": "Callflex dolore eiusmod voluptate proident aute incididunt anim",
       "offer_price": "$18.74",
@@ -310,12 +452,18 @@
       "campaingn_product": true,
       "cam_product_available": 18,
       "cam_product_sale": 10,
-      "product_type": null
+      "product_type": null,
+      "category":"Hats",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     },
     {
       "id": "62aefe9ae4fasgboihpnokmokm87b5c3efqwredgaefafa1fff5ae",
-      "image": "product-img-25.jpg",
-      "brand": "xioami",
+      "image": "https://i.ibb.co/w4k6Ws9/nike-funky.png",
+      "brand": "H&M",
       "review": 5,
       "title": "Callflex dolore eiusmod voluptate proident aute incididunt anim",
       "offer_price": "$18.74",
@@ -323,46 +471,13 @@
       "campaingn_product": true,
       "cam_product_available": 18,
       "cam_product_sale": 10,
-      "product_type": null
-    },
-    {
-      "id": "fafafsare62aefe9ae487b5c3efqwredgaefafa1fff5ae",
-      "image": "product-img-26.jpg",
-      "brand": "xioami",
-      "review": 5,
-      "title": "Callflex dolore eiusmod voluptate proident aute incididunt anim",
-      "offer_price": "$18.74",
-      "price": "$34.99",
-      "campaingn_product": true,
-      "cam_product_available": 18,
-      "cam_product_sale": 10,
-      "product_type": null
-    },
-    {
-      "id": "62aefea9ae4a87b5c3effqwreadgaefafa1ffaff5ae",
-      "image": "product-img-27.jpg",
-      "brand": "xioami",
-      "review": 5,
-      "title": "Callflex dolore eiusmod voluptate proident aute incididunt anim",
-      "offer_price": "$18.74",
-      "price": "$34.99",
-      "campaingn_product": true,
-      "cam_product_available": 18,
-      "cam_product_sale": 10,
-      "product_type": null
-    },
-    {
-      "id": "62aefea9ae4a87b5c3esswsssssffqwreadgaefafa1ffaff5ae",
-      "image": "product-img-28.jpg",
-      "brand": "xioami",
-      "review": 5,
-      "title": "Callflex dolore eiusmod voluptate proident aute incididunt anim",
-      "offer_price": "$18.74",
-      "price": "$34.99",
-      "campaingn_product": true,
-      "cam_product_available": 18,
-      "cam_product_sale": 10,
-      "product_type": null
+      "product_type": null,
+      "category":"Womens",
+      "colors":["black","red","gray","blue","yellow"],
+      "shipping":false,
+      "images":[
+        
+      ]
     }
   ]
 }

@@ -29,7 +29,7 @@ export default function ProductsAds({
                 backgroundSize: "cover",
               }}/>
 
-              <div className="space-x-2 flex flex-col items-start border-b border-qyellow h-3/4 w-1/2 bg-white p-5">
+              <div className="space-x-2 flex flex-col items-center h-3/4 w-1/2 p-5">
                 {names? ( <p className="mb-1 uppercase italic">{names[0]}</p>): null}             
                    <ul className="mb-1 ">
                     <li>Casual Wear</li>
@@ -38,8 +38,8 @@ export default function ProductsAds({
                     <li>Foot Wear</li>
                     <li>Accessories</li>
                    </ul>
-                  <Link to="#" className="inline-flex space-x-2 items-center self-center">
-                    <span className="text-sm text-qblack font-600 tracking-wide leading-7">
+                  <Link to="#" className="inline-flex space-x-2 items-center">
+                    <span className="text-sm text-qblack font-600 tracking-wide leading-7 border-b border-qyellow">
                        Shop Now
                     </span>
                     <span>
@@ -50,7 +50,7 @@ export default function ProductsAds({
           </div>
           
             <div data-aos="fade-left" className="flex-1 h-full flex bg-[#AEE6EC] flex-row justify-between items-center">
-              <div className="space-x-2 flex flex-col items-start border-b border-qyellow h-3/4 w-1/2 bg-white p-5">
+              <div className="space-x-2 flex flex-col items-center h-3/4 w-1/2 p-5">
                 {names? ( <p className="mb-1 uppercase italic">{names[1]}</p>): null} 
                   <ul className="mb-2">
                    <li>Casual Wear</li>
@@ -59,8 +59,8 @@ export default function ProductsAds({
                    <li>Foot Wear</li>
                    <li>Accessories</li>
                   </ul>
-                  <Link to="#" className="inline-flex space-x-2 items-center self-center">
-                    <span className="text-sm text-qblack font-600 tracking-wide leading-7">
+                  <Link to="#" className="inline-flex space-x-2 items-center">
+                    <span className="text-sm text-qblack font-600 tracking-wide border-b border-qyellow  leading-7">
                       Shop Now
                     </span>
                     <span>

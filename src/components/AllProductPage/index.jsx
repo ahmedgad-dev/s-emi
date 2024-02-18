@@ -5,6 +5,8 @@ import ProductCardStyleOne from "../Helpers/Cards/ProductCardStyleOne";
 import DataIteration from "../Helpers/DataIteration";
 import Layout from "../Partials/Layout";
 import ProductsFilter from "./ProductsFilter";
+import girlGlasses from '../../../src/assets/bg/girl-glasses.png'
+import hangedClothes from '../../../src/assets/bg/hanged-clothes.jpg'
 
 export default function AllProductPage() {
   const [filters, setFilter] = useState({
@@ -52,6 +54,21 @@ export default function AllProductPage() {
 
   const { products } = productDatas;
 
+  const getAllBrands = (items) => {
+    let arr = []
+    let brand = ''
+    let unique = ''
+    items.filter(product => {
+      brand = product.brand
+      arr.push(brand)
+      unique = [...new Set(arr)]
+      console.log(unique)
+    })
+    return unique
+  }
+
+  getAllBrands(products)
+
   return (
     <>
       <Layout>
@@ -75,8 +92,8 @@ export default function AllProductPage() {
                 <div className="w-full hidden lg:block h-[295px]">
                   <img
                     src={`${
-                      import.meta.env.VITE_PUBLIC_URL
-                    }/assets/images/ads-5.png`}
+                      girlGlasses
+                    }`}
                     alt=""
                     className="w-full h-full object-contain"
                   />
@@ -87,8 +104,7 @@ export default function AllProductPage() {
                 <div className="products-sorting w-full bg-white md:h-[70px] flex md:flex-row flex-col md:space-y-0 space-y-5 md:justify-between md:items-center p-[30px] mb-[40px]">
                   <div>
                     <p className="font-400 text-[13px]">
-                      <span className="text-qgray"> Showing</span> 1–16 of 66
-                      results
+                      <span className="text-qgray"> Showing</span> {`${products.length} results`}                      
                     </p>
                   </div>
                   <div className="flex space-x-3 items-center">
@@ -144,10 +160,10 @@ export default function AllProductPage() {
                 <div className="w-full h-[164px] overflow-hidden mb-[40px]">
                   <img
                     src={`${
-                      import.meta.env.VITE_PUBLIC_URL
-                    }/assets/images/ads-6.png`}
+                      hangedClothes
+                    }`}
                     alt=""
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-[30px] gap-5 mb-[40px]">
@@ -156,6 +172,16 @@ export default function AllProductPage() {
                     startLength={6}
                     endLength={15}
                   >
+                    {({ datas }) => (
+                      <div data-aos="fade-up" key={datas.id}>
+                        <ProductCardStyleOne datas={datas} />
+                      </div>
+                    )}
+                  </DataIteration>
+                </div>
+
+                <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  xl:gap-[30px] gap-5 mb-[40px]">
+                  <DataIteration datas={products} startLength={15} endLength={24}>
                     {({ datas }) => (
                       <div data-aos="fade-up" key={datas.id}>
                         <ProductCardStyleOne datas={datas} />

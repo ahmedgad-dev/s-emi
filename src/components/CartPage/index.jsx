@@ -5,8 +5,10 @@ import InputCom from "../Helpers/InputCom";
 import PageTitle from "../Helpers/PageTitle";
 import Layout from "../Partials/Layout";
 import ProductsTable from "./ProductsTable";
+import { useSelector } from "react-redux";
 
 export default function CardPage({ cart = true }) {
+  const {total} = useSelector(store => store.cart)
   return (
     <Layout childrenClasses={cart ? "pt-0 pb-0" : ""}>
       {cart === false ? (
@@ -66,7 +68,7 @@ export default function CardPage({ cart = true }) {
                       <p className="text-[15px] font-medium text-qblack">
                         Subtotal
                       </p>
-                      <p className="text-[15px] font-medium text-qred">$365</p>
+                      <p className="text-[15px] font-medium text-qred">${total}</p>
                     </div>
                     <div className="w-full h-[1px] bg-[#EDEDED]"></div>
                   </div>
@@ -177,7 +179,7 @@ export default function CardPage({ cart = true }) {
                       <p className="text-[18px] font-medium text-qblack">
                         Total
                       </p>
-                      <p className="text-[18px] font-medium text-qred">$365</p>
+                      <p className="text-[18px] font-medium text-qred">${total}</p>
                     </div>
                   </div>
                   <Link to="/checkout">

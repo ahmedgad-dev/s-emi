@@ -42,9 +42,7 @@ export default function TopBar({ className }) {
                 <div className="country-select flex space-x-1 items-center">
                   <div>
                     <img
-                      src={`${
-                        import.meta.env.VITE_PUBLIC_URL
-                      }/assets/images/country-logo-16x16.png`}
+                      src={`${''}`}
                       width="16"
                       height="16"
                       alt="country logo"
@@ -53,18 +51,18 @@ export default function TopBar({ className }) {
                   </div>
                   <Selectbox
                     className="w-fit"
-                    datas={["United State", "Bangladesh", "India"]}
+                    datas={["Azerbaycan", "Russia"]}
                   />
                   <div>
                     <Arrow className="fill-current qblack" />
                   </div>
                 </div>
                 <div className="currency-select flex space-x-1 items-center">
-                  <Selectbox className="w-fit" datas={["USD", "BDT"]} />
+                  <Selectbox className="w-fit" datas={["AZN", "USD"]} />
                   <Arrow className="fill-current qblack" />
                 </div>
                 <div className="language-select flex space-x-1 items-center">
-                  <Selectbox className="w-fit" datas={["Bangla", "english"]} />
+                  <Selectbox className="w-fit" datas={["English", "Azerbaycan", "Russian"]} />
                   <Arrow className="fill-current qblack" />
                 </div>
               </div>

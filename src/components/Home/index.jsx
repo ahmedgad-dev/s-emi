@@ -12,6 +12,7 @@ import Banner from "./Banner2";
 import BrandSection from "./BrandSection";
 import CampaignCountDown from "./CampaignCountDown";
 import ProductsAds from "./ProductsAds";
+import SingleAd from "./SingleAd";
 import bgWoman from '../../assets/bg/woman-new-year.png'
 import bg from '../../assets/bg/banner-1.png'
 import bg2 from '../../assets/bg/light-blue-o.png'
@@ -63,11 +64,13 @@ export default function Home() {
         >
           <SectionStyleTwo products={products.slice(3, products.length)} />
         </ViewMoreTitle>
-       <ViewMoreTitle
+{   /*    <ViewMoreTitle
           className="best-sallers-section mb-[60px]"
           seeMoreUrl="/sallers"
           categoryTitle="Top Sellers"
         >
+</ViewMoreTitle>*/}
+
         <ProductsAds
           ads={[
             `${bgWoman}`,
@@ -77,7 +80,6 @@ export default function Home() {
           sectionHeight="sm:h-[295px] h-full"
           className="products-ads-section mb-[60px]"
         />
-        </ViewMoreTitle>
 
         <SectionStyleOne
           categoryBackground={bg2}
@@ -88,7 +90,7 @@ export default function Home() {
           seeMoreUrl="/all-products"
           className="category-products mb-[60px]"
         />
-     {/*   <ProductsAds
+        {/*<SingleAd
           sectionHeight="164"
           ads={[`${girlGlasses}`]}
           className="products-ads-section mb-[60px]"

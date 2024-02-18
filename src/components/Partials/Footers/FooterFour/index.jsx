@@ -189,7 +189,7 @@ export default function FooterFour() {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                className="font-500 text-qh4-pink mx-1"
+                className="font-500 text-qyellow mx-1"
               >
                 ahmedGad-Dev
               </a>

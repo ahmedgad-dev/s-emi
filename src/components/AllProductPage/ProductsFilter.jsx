@@ -1,5 +1,7 @@
 import RangeSlider from "react-range-slider-input";
 import Checkbox from "../Helpers/Checkbox";
+import productDatas from "../../data/products.json";
+
 
 export default function ProductsFilter({
   filters,
@@ -12,6 +14,23 @@ export default function ProductsFilter({
   filterToggle,
   filterToggleHandler,
 }) {
+
+  const { products } = productDatas;
+
+  const getAllBrands = (items) => {
+    let arr = []
+    let brand = ''
+    let unique = ''
+    items.filter(product => {
+      brand = product.brand
+      arr.push(brand)
+      unique = [...new Set(arr)]
+    })
+    return unique
+  }
+
+  const brands = getAllBrands(products)
+
   return (
     <>
       <div
@@ -492,166 +511,29 @@ export default function ProductsFilter({
           </div>
           <div className="filter-items">
             <ul>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="apple"
-                      name="apple"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.apple}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="apple"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      apple
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="samsung"
-                      name="samsung"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.samsung}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="samsung"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      Samsung
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="walton"
-                      name="walton"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.walton}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="walton"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      walton
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="oneplus"
-                      name="oneplus"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.oneplus}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="oneplus"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      oneplus
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="vivo"
-                      name="vivo"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.vivo}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="vivo"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      vivo
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="oppo"
-                      name="oppo"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.oppo}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="oppo"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      oppo
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="xiomi"
-                      name="xiomi"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.xiomi}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="xiomi"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      xiomi
-                    </label>
-                  </div>
-                </div>
-              </li>
-              <li className="item flex justify-between items-center mb-5">
-                <div className="flex space-x-[14px] items-center">
-                  <div>
-                    <Checkbox
-                      id="others"
-                      name="others"
-                      handleChange={(e) => checkboxHandler(e)}
-                      checked={filters.others}
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="others"
-                      className="text-xs font-black font-400 capitalize"
-                    >
-                      others
-                    </label>
-                  </div>
-                </div>
-              </li>
+              {
+               brands.map((brand) => (
+                <li className="item flex justify-between items-center mb-5">
+                 <div className="flex space-x-[14px] items-center">
+                 <div>
+                  <Checkbox
+                    id="apple"
+                    name="apple"
+                    handleChange={(e) => checkboxHandler(e)}
+                    checked={filters.apple}
+                  />
+                 </div>
+                 <div>
+                  <label
+                    htmlFor="apple"
+                    className="text-xs font-black font-400 capitalize"
+                  >
+                    {brand}
+                  </label>
+                 </div>
+               </div>
+              </li>                 
+              ))}
             </ul>
           </div>
         </div>
@@ -815,7 +697,7 @@ export default function ProductsFilter({
                       htmlFor="sizeFit"
                       className="text-xs font-black font-400 capitalize"
                     >
-                      Sliem Fit
+                      Slim Fit
                     </label>
                   </div>
                 </div>

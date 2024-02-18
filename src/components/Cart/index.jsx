@@ -1,16 +1,21 @@
+import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import {removeItem, calculateTotals} from "../../slices/cartSlice";
 import { useDispatch } from "react-redux";
+import { useEffect } from "react";
 
 
 export default function Cart({ className, type }){
   const {cartItems, total} = useSelector(store => store.cart)
   const dispatch = useDispatch()
 
+  useEffect(() => {
+     dispatch(calculateTotals())
+  },[cartItems])
+
   const removeHandler = (item) => {
      dispatch(removeItem(item.id))
-  //   dispatch(calculateTotals())
   }
 
   return (
@@ -25,7 +30,7 @@ export default function Cart({ className, type }){
           <div className="product-items h-[310px] overflow-y-scroll">
             <ul>
               {cartItems && cartItems.map(item => (
-              <li className="w-full h-full flex">
+              <li key={item.id} className="w-full h-full flex">
               <div className="flex space-x-[6px] justify-center items-center px-4 my-[20px]">
                 <div className="w-[65px] h-full">
                   <img
@@ -71,7 +76,7 @@ export default function Cart({ className, type }){
               <span className="text-[15px] font-500 text-qred ">${total}</span>
             </div>
             <div className="product-action-btn">
-              <Link to="cart">
+              <Link to="/cart" replace>
                 <div className="gray-btn w-full h-[50px] mb-[10px] ">
                   <span>View Cart</span>
                 </div>
