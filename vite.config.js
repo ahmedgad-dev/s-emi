@@ -44,6 +44,6 @@ const pwaConfig = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  basename: "/",
+  basename: "/s-emi",
   plugins: [react(), VitePWA(pwaConfig), tailwind()],
 });
