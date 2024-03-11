@@ -20,9 +20,9 @@ const pwaConfig = {
     ],
   },
   manifest: {
-    name: "Shopo",
-    short_name: "Shopo",
-    description: "Shopo",
+    name: "Semi",
+    short_name: "Semi",
+    description: "an e-commerce platform for selling clothes",
     start_url: "/",
     display: "standalone",
     background_color: "#FFBB38",
@@ -44,6 +44,6 @@ const pwaConfig = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  basename: "/s-emi",
+  basename: "/my-app",
   plugins: [react(), VitePWA(pwaConfig), tailwind()],
 });
